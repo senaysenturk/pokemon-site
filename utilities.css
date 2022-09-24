@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #ef5350;
+  --secondary-color: #ffcc00;
+  --outline-color: #0075be;
+  --background-color: #f9f9f9;
+  --grass: #9bcc50;
+  --fire: #fd7d24;
+  --water: #4592c4;
+  --bug: #729f3f;
+  --poison: #b97fc9;
+  --flying: #3dc7ef;
+  --electric: #eed535;
+  --normal: #a4acaf;
+  --ground: #c98474;
+  --fairy: #fdb9e9;
+  --psychic: #a084cf;
+  --fighting: #eb5353;
+  --rock: #5584ac;
+  --steel: #a2d2ff;
+}
+
+.grass {
+  background-color: var(--grass);
+}
+.fire {
+  background-color: var(--fire);
+}
+.water {
+  background-color: var(--water);
+}
+.bug {
+  background-color: var(--bug);
+}
+.poison {
+  background-color: var(--poison);
+}
+.flying {
+  background-color: var(--flying);
+}
+.electric {
+  background-color: var(--electric);
+}
+.normal {
+  background-color: var(--normal);
+}
+.ground {
+  background-color: var(--ground);
+}
+.fairy {
+  background-color: var(--fairy);
+}
+.psychic {
+  background-color: var(--psychic);
+}
+.fighting {
+  background-color: var(--fighting);
+}
+.rock {
+  background-color: var(--rock);
+}
+.steel {
+  background-color: var(--steel);
+}

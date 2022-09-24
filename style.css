@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Miltonian Tattoo", cursive;
+  font-family: "Nanum Brush Script", cursive;
+  /* font-family: "Roboto", sans-serif;  */
+}
+
+body {
+  background: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0 20px;
+  box-shadow: 10px 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 70px;
+  margin-left: 10px;
+  font-weight: 800;
+  -webkit-text-stroke: 0.1px var(--outline-color);
+}
+
+header a {
+  color: var(--secondary-color);
+  /* -webkit-text-stroke: 0.1px var(--outline-color); */
+  font-size: 35px;
+  padding: 0 10px;
+  font-family: "Nanum Brush Script", cursive;
+  /* font-family: "Hi Melody", cursive; */
+  font-weight: 600;
+}
+
+header a:hover {
+  font-weight: 400;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-top: -5px;
+}
+
+header .logo img {
+  height: 50px;
+  margin-left: 5px;
+}
+
+.links {
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 10px;
+  margin: 55px auto;
+  width: 80%;
+  justify-content: center;
+}
+
+.search {
+  width: 80%;
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+}
+
+.search i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  padding: 5px 180px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.search input {
+  width: 40%;
+  border-radius: 50px;
+  border: 2px solid var(--outline-color);
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 30px;
+  color: var(--outline-color);
+  text-align: center;
+  font-weight: 800;
+}
+
+/* When the input field gets focus, change its width to 100% */
+.search input:focus {
+  width: 80%;
+  border: 3px solid var(--outline-color);
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--secondary-color);
+  letter-spacing: 8px;
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+  background: white;
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Miltonian Tattoo", cursive;
+}
+
+.types {
+  display: flex;
+}
+.card span {
+  margin-left: 5px;
+  color: var(--background-color);
+  padding: 3px;
+  border-radius: 3px;
+}
+.card img {
+  /* height: 300px; */
+  width: 90%;
+}
+.menu {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 25px;
+  font-weight: 800;
+  /* -webkit-text-stroke: 1px var(--outline-color); */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  box-shadow: 10px 0 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-menu {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.toggle-menu nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-menu ul {
+  display: inline;
+}
+.toggle-menu a {
+  font-size: 30px;
+}
+.material-symbols-outlined{
+  display: none;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 760px) {
+  .menu {
+    display: block;
+  }
+  .links {
+    display: none;
+  }
+  .material-symbols-outlined{
+    display: block;
+  }
+
+  .search input {
+    width: 50%;
+    min-height: 20px;
+    line-height: 20px;
+  }
+}
