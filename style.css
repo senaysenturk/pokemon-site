@@ -46,6 +46,9 @@ header a {
   font-family: "Nanum Brush Script", cursive;
   /* font-family: "Hi Melody", cursive; */
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header a:hover {
